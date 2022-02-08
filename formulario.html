@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleFormulario.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h2>Manutenção do Usuário Interno</h2>
+    <form action="inserirUsuario.php" method="post">
+        <label for="txtLogin">Login</label>
+        <input type="text" name="txtLogin" id="txtLogin" placeholder="Digite o login" required>
+        <br><br>
+        <label for="txtSenha">Senha</label>
+        <input type="password" name="txtSenha" id="txtSenha" placeholder="Digite a senha" required>
+        <br><br>
+        <label for="txtEstatus">Status</label>
+        <select name="txtEstatus" id="txtEstatus">
+            <option value="1">Ativo</option>
+            <option value="0">Inativo</option>
+        </select>
+        <br><br>
+        <div>
+            <label for="txtNome">Tipo: </label>
+            <input type="radio" name="txtTecnico" id="txtTecnico" value="T">Técnico
+            <input type="radio" name="txtProfessor" id="txtProfessor" value="P">Professor
+            <input type="radio" name="txtAluno" id="txtAluno" value="A">Aluno
+        </div>
+        <br><br>
+        <label for="txtDate">Date</label>
+        <input type="date" name="txtDate" id="txtDate" placeholder="Digite a data" required>
+        <br><br>
+        <div>
+            <label for="txtPerfil">Perfil: </label>
+            <input type="radio" name="txtConvidado" id="txtConvidado" value="C">Convidado
+            <input type="radio" name="txtAdministrador" id="txtAdministrador" value="A">Administrador
+        </div>
+        <br><br>
+        <label for="txtObservacao">Observações</label>
+        <textarea name="txtObservacao" id="txtObservacao" cols="30" rows="10"></textarea>
+        <br><br>
+        <div>
+            <label for="txtNome">Módulo: </label>
+            <input type="checkbox" id="txtCompras" value="C">Compras
+            <input type="checkbox" id="txtBiblioteca" value="B">Biblioteca
+            <input type="checkbox" id="txtAcademico" value="A">Acadêmico
+            <input type="checkbox" id="txtDocumentacao" value="D">Documentação
+            <input type="checkbox" id="txtRecursos" value="R">Recursos Humanos
+        </div>
+        <br><br>
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Excluir</button>
+    </form>
+</body>
+
+</html>

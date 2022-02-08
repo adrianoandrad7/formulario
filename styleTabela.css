@@ -1,0 +1,38 @@
+body {
+    margin: 20px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {  
+    width: 100%;
+    border: 1px solid #000;
+}
+
+th {
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(144, 201, 255);
+    border: #000 1px solid;
+}
+
+.tituloTabela {
+    background-color: rgb(27, 156, 216);
+}
+.nacionais{
+    background-color:rgb(27, 156, 216)
+}
+
+.Tempo{
+    background-color:rgb(27, 109, 216)
+}
+.Servico{
+    background-color:rgb(27, 109, 216)
+}
+
+.Veiculo{
+    background-color:rgb(27, 109, 216)
+}
+.Valor{
+    background-color:rgb(27, 109, 216)
+}
+
